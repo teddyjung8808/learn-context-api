@@ -24,6 +24,12 @@ export default AuthContext;
 
 브랜치 url : [GitHub - teddyjung8808/learn-context-api](https://github.com/teddyjung8808/learn-context-api)
 
-코드 리팩토링의 목적 : - 로그인 관련 로직들을 전부 컨텍스트 파일 하나에서 관리하고 처리할 수 있게 하기 위함 - 컨텍스트 파일에서 로직을 처리하기 위해 Provider 로 감싼 jsx 를 리턴하는 컴포넌트를 생성하고, 리액트 훅을 사용하게 만들 수 있게 하기 위함 - App.js 는 상위 파일의 개념이므로 기타 로직이 들어가는 것이 코드상 보기 좋지 않음 - 대신 index.js 에서 App 컴포넌트를 컨텍스트로 감싸주면 된다. 그러면 AuthContext 의 하위 children 으로 App 이 오게 되고 App 은 컨텍스트의 값을 받을 준비가 되었다.
+코드 리팩토링의 목적
+
+- 로그인 관련 로직들을 전부 컨텍스트 파일 하나에서 관리하고 처리할 수 있게 하기 위함
+
+- 컨텍스트 파일에서 로직을 처리하기 위해 Provider 로 감싼 jsx 를 리턴하는 컴포넌트를 생성하고, 리액트 훅을 사용하게 만들 수 있게 하기 위함
+
+- App.js 는 상위 파일의 개념이므로 기타 로직이 들어가는 것이 코드상 보기 좋지 않음 - 대신 index.js 에서 App 컴포넌트를 컨텍스트로 감싸주면 된다. 그러면 AuthContext 의 하위 children 으로 App 이 오게 되고 App 은 컨텍스트의 값을 받을 준비가 되었다.
 
 위 브랜치에서 전체 코드 확인이 가능
