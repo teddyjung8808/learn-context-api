@@ -16,7 +16,7 @@ const AuthContext = React.createContext({
 export default AuthContext;
 ```
 
-[image:4BD23957-51B7-44F2-8620-6F3F7A77A8D4-68420-000105AE4AF483A9/스크린샷 2022-08-14 오전 10.20.49.png]
+![egimage](https://user-images.githubusercontent.com/104371223/184519930-9f2b1f0a-65c9-46d0-b47d-c0adeab8ed0c.png)
 
 이제 VSCode 에서 자동완성에 onLogout 이 뜬다.
 
